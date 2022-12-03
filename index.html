@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https: //fonts.googleapis.com/css2?family= Poppins: família= Poppins:wght@400;500 & display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="./style.css" rel="stylesheet" />
+    <title>Sidebar</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+          <div class="menu">
+              <img class="logo" src="./assets/logo.svg" alt="Pegada de pata de cachorro">
+              <button id="menu-botão" onclick="openCloseSidebar()">
+                  <img src="./assets/menu.svg" alt="Menu">
+              </button>
+          </div>
+
+          <div class="buscar">
+            <button class="buscar-botão" onclick="openCloseSidebar()">
+                <img src="./assets/search.svg" alt="Lupa">
+            </button>
+            <input type="text" placeholder="Buscar">
+        </div>
+
+        <div class="content">
+          <a href="#">
+            <img src="./assets/grid.svg" />
+            <p>Dashboard</p>
+          </a>
+
+          <a href="#">
+            <img src="./assets/pet.svg" />
+            <p>Pets</p>
+          </a>
+
+          <a href="#">
+            <img src="./assets/user.svg" />
+            <p>Clientes</p>
+          </a>
+
+          <a href="#">
+            <img src="./assets/vet.svg" />
+            <p>Vets</p>
+          </a>
+
+          <a href="#">
+            <img src="./assets/settings.svg" />
+            <p>Ajustes</p>
+          </a>
+        </div>
+
+        <div class="footer">
+          <img class="avatar" src="./assets/photo.jpg" />
+
+          <span>
+            <p>Eleanor Pena</p>
+            <p>Veterinária</p>
+          </span>
+
+          <button class="log-out" onclick="openCloseSidebar()">
+            <img src="./assets/log-out.svg" alt="Log-out" />
+          </button>
+        </div>
+      </div>
+
+      <div class="main">
+        <h2>Dashboard</h2>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
